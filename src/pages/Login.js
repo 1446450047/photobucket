@@ -6,7 +6,7 @@ const Login = observer(() => {
     const {AuthStore} = useStore();
     return (
         <>
-            <h1>登录</h1>
+            <h1>登录{AuthStore.values.username}</h1>
         </>
     );
 });
