@@ -1,19 +1,38 @@
 import React from "react";
-import {BrowserRouter as Router, Link} from "react-router-dom";
-import logo from "../assets/images/logo.jpg"
-function Header(){
-    return(
-        <header>
-            <h1>Header</h1>
-            <img src={logo} alt="logo"/>
+import {BrowserRouter as Router, NavLink} from "react-router-dom";
+import styled from "styled-components";
+
+const NavHeader = styled.header`
+  background-color:#235952;
+  color: #FFF;
+  display: flex;
+  padding: 10px 100px;
+  align-items: center;
+  >h1{
+    padding-right: 30px;
+  }
+   >nav{
+       >a{
+          margin-right: 3em;
+          color: #fff;   
+           &.active{
+               border-bottom: 1px solid #fff;
+           }
+       }
+   }
+`;
+
+function Header() {
+    return (
+        <NavHeader>
+            <h1>photobucket</h1>
             <nav>
-                <Link to="/">首页</Link>
-                |
-                <Link to="/about">关于</Link>
-                |
-                <Link to="/history">历史记录</Link>
+                <NavLink to="/" activeClassName={'active'} exact >首页</NavLink>
+                <NavLink to="/history" activeClassName={'active'} >历史记录</NavLink>
+                <NavLink to="/about" activeClassName={'active'}  >关于我</NavLink>
             </nav>
-        </header>
-    )
+        </NavHeader>
+    );
 }
-export {Header}
+
+export {Header};

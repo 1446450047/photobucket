@@ -12,18 +12,25 @@ import {Loading} from "./components/Loading";
 const History = lazy(() => import("./pages/History"));
 const About = lazy(() => import("./pages/About"));
 const Home = lazy(() => import("./pages/Home"));
+const Login = lazy(() => import("./pages/Login"));
+const Register = lazy(() => import("./pages/Register"));
 
 function App() {
     return (
-        <div className="App">
-            <main>
-                <Suspense fallback={<Loading/>}>
-                    <Router>
-                        <Header/>
-
+        <>
+            <Suspense fallback={<Loading/>}>
+                <Router>
+                    <Header/>
+                    <main>
                         <Switch>
                             <Route path="/about">
                                 <About/>
+                            </Route>
+                            <Route path="/login">
+                                <Login/>
+                            </Route>
+                            <Route path="/register">
+                                <Register/>
                             </Route>
                             <Route path="/history">
                                 <History/>
@@ -32,11 +39,11 @@ function App() {
                                 <Home/>
                             </Route>
                         </Switch>
-                        <Footer/>
-                    </Router>
-                </Suspense>
-            </main>
-        </div>
+                    </main>
+                    <Footer/>
+                </Router>
+            </Suspense>
+        </>
     );
 }
 
