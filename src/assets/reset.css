@@ -13,4 +13,5 @@ a{
 main{
     min-height: 80vh;
     background: #f7f7ee;
+    padding: 4em 8em;
 }
