@@ -1,7 +1,6 @@
 import React from "react";
-import {Form, Input, Button, Checkbox} from "antd";
+import {Form, Input, Button} from "antd";
 import styled from "styled-components";
-import {H1} from "../components/H1";
 
 const layout = {
     labelCol: {
@@ -17,7 +16,7 @@ const tailLayout = {
         span: 24,
     },
 };
-const H2 = styled.h1`
+const H1 = styled.h1`
     margin: 30px auto;
     width: 500px;
     text-align: center;
@@ -43,7 +42,6 @@ const Register = () => {
             onFinishFailed={onFinishFailed}
         >
             <H1>欢迎使用photobucket图床</H1>
-            <H2>欢迎使用photobucket图床</H2>
             <Form.Item
                 label="用户名"
                 name="username"

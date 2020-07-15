@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7124b341-d3a4-4eba-b7ef-9d4ad1fb6939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/H1.js" afterDir="false" />
+    <list default="true" id="7124b341-d3a4-4eba-b7ef-9d4ad1fb6939" name="Default Changelist" comment="成功封装h1标签,刚才是标签名写错了,明天继续练习">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/H1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +82,7 @@
       <workItem from="1594687669732" duration="113000" />
       <workItem from="1594687818405" duration="51000" />
       <workItem from="1594687870472" duration="19799000" />
-      <workItem from="1594808570203" duration="10887000" />
+      <workItem from="1594808570203" duration="11442000" />
     </task>
     <task id="LOCAL-00001" summary="添加页面的基本架构">
       <created>1594697521936</created>
@@ -111,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594718286373</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加了网页的登录注册表单验证,尝试封装h1标签,但是浏览器崩了,内存崩了">
+      <created>1594824273366</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594824273368</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +135,8 @@
     <MESSAGE value="添加页面的基本架构" />
     <MESSAGE value="完成了导航栏,然后添加了auth和index" />
     <MESSAGE value="执行了yarn eject" />
-    <option name="LAST_COMMIT_MESSAGE" value="执行了yarn eject" />
+    <MESSAGE value="添加了网页的登录注册表单验证,尝试封装h1标签,但是浏览器崩了,内存崩了" />
+    <MESSAGE value="成功封装h1标签,刚才是标签名写错了,明天继续练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="成功封装h1标签,刚才是标签名写错了,明天继续练习" />
   </component>
 </project>
