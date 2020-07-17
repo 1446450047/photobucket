@@ -5,4 +5,4 @@ const context = createContext({
     AuthStore: new AuthStore()
 });
 
-export const useStore = () => useContext(context);
+export const useStores = () => useContext(context);

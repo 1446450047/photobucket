@@ -1,6 +1,7 @@
 import React from "react";
 import {Form, Input, Button, Checkbox} from "antd";
 import styled from "styled-components";
+import {useStores} from "../stores";
 
 const layout = {
     labelCol: {
@@ -33,14 +34,22 @@ const validateConfigPassword = ({getFieldValue}) => ({
 });
 
 const Register = () => {
+    const {AuthStore} = useStores();
+
     const onFinish = values => {
         console.log("Success:", values);
+        AuthStore.setUsername(values.username);
+        AuthStore.setPassword(values.password);
+        AuthStore.register().then(()=>{
+            console.log("注册成功");
+        }).catch(()=>{
+            console.log("注册失败");
+        });
     };
 
     const onFinishFailed = errorInfo => {
         console.log("Failed:", errorInfo);
     };
-
     return (
         <Form
             {...layout}
